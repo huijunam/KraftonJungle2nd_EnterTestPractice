@@ -1,0 +1,33 @@
+<!-- Flask 서버를 만들 때는 항상 프로젝트 폴더 안에 
+static, templates 폴더와 app.py를 먼저 만들고 시작해주세요!(기본구조)
+static 폴더는 HTML 파일 외에 이미지, css파일과 같은 파일을 담아두는 역할을 합니다.
+templates 폴더는 HTML 파일을 담아두고 불러오는 역할을 합니다. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>a
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Optional JavaScript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='flask_basic.css') }}" /> -->
+    <!-- <style type="text/css">
+            h1{
+                color: red;
+            }
+        </style> -->
+</head>
+
+<body>
+    <h1>서버를 만들었다!</h1>
+    <!--static에 있는 rome.jpg연결-->
+    <!--이미지 뿐만 아니라 헤드에 넣는 css 파일 등의 링크도 형식에 맞게 바꿔야 한다-->
+    <img src="{{url_for('static', filename='rome.jpg')}}" />
+</body>
+
+</html>

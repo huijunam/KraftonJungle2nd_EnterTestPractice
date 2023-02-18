@@ -1,0 +1,21 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.wrap {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.mytitle {
+    color: white;
+    width: 300px;
+    height: 200px;
+    background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
